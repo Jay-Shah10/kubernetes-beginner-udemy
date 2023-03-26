@@ -35,7 +35,9 @@ If you're using minikube. you can use the `url` flag for the service to see the 
 ## Resources: 
 - Udemy: "Kubernetes for absolute beginners - Hands on" by Mumshad Mannambeth
 - [minikube](https://minikube.sigs.k8s.io/docs/start/)
-- Optional [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) at the time of `kind v0.14.0 go1.18.2 darwin/arm64`. 
+- Optional [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) at the time of `kind v0.14.0 go1.18.2 darwin/arm64`.
+- [kodeckoudhub/example-voting-app-kubernetes](https://github.com/kodekloudhub/example-voting-app-kubernetes)
+- [dockersamples/example-voting-app](https://github.com/dockersamples/example-voting-app) 
 
 
 
