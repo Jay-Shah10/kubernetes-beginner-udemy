@@ -1,14 +1,27 @@
 # Voting app
+Example microservice app used for practice.
 
-Example microservice app that is going to be deployed using Kind locally. 
+## Setup: 
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2. Install [minikube](https://minikube.sigs.k8s.io/docs/start/)
 
-1. First we are going to have to have Docker running: 
-2. Second have Kind installed. 
-3. Third spin up a kind cluster and give it a name. 
+### miniKube
+I installed it using brew. `brew install minikube`. 
+At the time of this, I installed this following version: `version: v1.29.0`
+
+```
+brew install minikube
+
+which minikube
+
+minikube version
+```
+
+## Running this example app: 
 
 To apply and test test: 
-- Create: `kubectl create -f voting-app-pod.yaml`
-- Creating the service: `kubectl create -f voting-app-service.yaml`
+- Create: `kubectl create -f [path/to/voting-app-pod.yaml]`
+- Creating the service: `kubectl create -f [path/to/voting-app-service.yaml]`
 
 Checking the status of the pod and service: 
 - `kubectl get pods,svc` this will list both pods and service. 
@@ -17,9 +30,13 @@ If you're using minikube. you can use the `url` flag for the service to see the 
 - `minikube service voting-service --url` 
 
 
-### TODO: run this with minikube as well. 
 
 
-## Creating a deployment: 
-- This will create a replicaset and you manage easier. 
+## Resources: 
+- Udemy: "Kubernetes for absolute beginners - Hands on" by Mumshad Mannambeth
+- [minikube](https://minikube.sigs.k8s.io/docs/start/)
+- Optional [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) at the time of `kind v0.14.0 go1.18.2 darwin/arm64`. 
+
+
+
 
