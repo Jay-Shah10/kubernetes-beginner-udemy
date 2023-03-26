@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+# This has to be db for postgres database. If this is not the name, then there are connection issues.
+  name: db
+  labels:
+    name: postgres-service
+    app: demo-voting-app
+spec:
+#  Selector is going to use same labels we used in the pod definition file. This will link the service to the pod.
+  selector:
+    name: postgres-pod
+    app: demo-voting-app
+  ports:
+  - port: 5432  
+    targetPort: 5432
