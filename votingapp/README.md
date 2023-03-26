@@ -7,7 +7,6 @@ Example microservice app used for practice.
 
 ### miniKube
 I installed it using brew. `brew install minikube`. 
-At the time of this, I installed this following version: `version: v1.29.0`
 
 ```
 brew install minikube
@@ -16,6 +15,12 @@ which minikube
 
 minikube version
 ```
+
+## Version: 
+- kubectl `Client Version: v1.26.3`
+- minikube: ``version: v1.29.0`
+- kind: `kind v0.14.0 go1.18.2 darwin/arm64`.
+- docker desktop: `Version 4.15.0 (93002)`
 
 ## Running this example app: 
 
